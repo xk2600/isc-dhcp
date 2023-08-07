@@ -627,6 +627,7 @@ get_hw_addr(const char *name, struct hardware *hw) {
 	 * Pull out the appropriate information.
 	 */
         switch (sa->sdl_type) {
+                case IFT_LOOP:
                 case IFT_ETHER:
 #if defined (IFT_L2VLAN)
 		case IFT_L2VLAN:
